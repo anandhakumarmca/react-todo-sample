@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Todo App</h1>
+      <h1>My Todo</h1>
       <AddTodoForm onAdd={addTodo} />
       <FilterTodo statusFilter={statusFilter} onStatusFilterChange={setStatusFilter} />
       <TodoList

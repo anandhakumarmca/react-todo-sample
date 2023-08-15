@@ -3,7 +3,7 @@ import React from 'react';
 const FilterTodo = ({ statusFilter, onStatusFilterChange }) => {
   return (
     <div className="filter-todo">
-      <label>Filter by Status:</label>
+      <label> Status Filter :</label>
       <select
         value={statusFilter}
         onChange={(e) => onStatusFilterChange(e.target.value)}
