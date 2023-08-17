@@ -45,9 +45,6 @@ Welcome to the My Todo App! This is a simple web application built using React t
     `cd react-todo-sample`
 
 3. Install dependencies:
-  
-  ```sh
-  `npm install`
 
-
-
+   ```sh
+    `npm install`
