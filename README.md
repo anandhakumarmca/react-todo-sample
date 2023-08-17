@@ -2,9 +2,13 @@
 
 Welcome to the My Todo App! This is a simple web application built using React that allows users to manage their tasks with CRUD functionalities.
 
+# Sample Screenshots
+
 ![My Todo App Screenshot](https://github.com/anandhakumarmca/react-todo-sample/blob/cb2d37c3fb4e3b920e5cade7a4a6e9dc4b4e7391/my-todo1.png)
-(https://github.com/anandhakumarmca/react-todo-sample/blob/cb2d37c3fb4e3b920e5cade7a4a6e9dc4b4e7391/my-todo2.png)
-(https://github.com/anandhakumarmca/react-todo-sample/blob/cb2d37c3fb4e3b920e5cade7a4a6e9dc4b4e7391/my-todo3.png)
+
+![My Todo App Screenshot](https://github.com/anandhakumarmca/react-todo-sample/blob/cb2d37c3fb4e3b920e5cade7a4a6e9dc4b4e7391/my-todo2.png)
+
+![My Todo App Screenshot](https://github.com/anandhakumarmca/react-todo-sample/blob/cb2d37c3fb4e3b920e5cade7a4a6e9dc4b4e7391/my-todo3.png)
 
 ## Table of Contents
 
