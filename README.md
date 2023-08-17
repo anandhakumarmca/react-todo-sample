@@ -48,3 +48,8 @@ Welcome to the My Todo App! This is a simple web application built using React t
 
    ```sh
     `npm install`
+
+4. Start the development server:
+
+   ```sh
+    `npm start`
