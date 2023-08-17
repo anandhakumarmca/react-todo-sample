@@ -17,8 +17,6 @@ Welcome to the My Todo App! This is a simple web application built using React t
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -45,4 +43,14 @@ Welcome to the My Todo App! This is a simple web application built using React t
 
    ```sh
     `cd react-todo-sample`
+
+3. Install dependencies:
+  
+  ```sh
+    `npm install`
+
+4. Start the development server:
+
+  ```sh
+   `npm start`
 
