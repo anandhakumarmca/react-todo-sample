@@ -40,3 +40,10 @@ Welcome to the My Todo App! This is a simple web application built using React t
 
    ```sh
    git clone https://github.com/anandhakumarmca/react-todo-sample.git
+
+2. Navigate to the project directory:
+
+   
+   ```sh
+    `cd react-shopping-cart-app`
+
