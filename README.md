@@ -43,7 +43,6 @@ Welcome to the My Todo App! This is a simple web application built using React t
 
 2. Navigate to the project directory:
 
-   
    ```sh
-    `cd react-shopping-cart-app`
+    `cd react-todo-sample`
 
