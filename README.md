@@ -39,4 +39,4 @@ Welcome to the My Todo App! This is a simple web application built using React t
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-username/react-todo-app.git
+   git clone [https://github.com/your-username/react-todo-app.git](https://github.com/anandhakumarmca/react-todo-sample.git)https://github.com/anandhakumarmca/react-todo-sample.git
