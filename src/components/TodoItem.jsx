@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
+// Functional component representing an individual todo item
 const TodoItem = ({ todo, onEdit, onDelete, onStatusChange }) => {
-
+  // Function to determine the class name for the select element
   const getSelectClassName = () => {
     if (todo.status === "completed") {
       return "btn btn-success"; // Apply green color for completed todos
@@ -11,18 +12,22 @@ const TodoItem = ({ todo, onEdit, onDelete, onStatusChange }) => {
     return "btn btn-info"; // Default color (info)
   };
 
+  // State for tracking editing state and edited todo
   const [isEditing, setIsEditing] = useState(false);
   const [editedTodo, setEditedTodo] = useState({ ...todo });
 
+  // Function to initiate editing mode
   const handleEdit = () => {
     setIsEditing(true);
   };
 
+  // Function to save the edited todo
   const handleSaveEdit = () => {
     onEdit(todo.id, editedTodo); // Call onEdit with the updated todo
     setIsEditing(false);
   };
 
+  // Function to handle input change in editing mode
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setEditedTodo((prevTodo) => ({
@@ -33,6 +38,7 @@ const TodoItem = ({ todo, onEdit, onDelete, onStatusChange }) => {
 
   return (
     <div className="todo-card">
+      {/* Display Name with input field in editing mode */}
       <p>
         Name :{" "}
         {isEditing ? (
@@ -45,6 +51,7 @@ const TodoItem = ({ todo, onEdit, onDelete, onStatusChange }) => {
           todo.name
         )}
       </p>
+      {/* Display Description with input field in editing mode */}
       <p>
         Description :{" "}
         {isEditing ? (
@@ -57,6 +64,7 @@ const TodoItem = ({ todo, onEdit, onDelete, onStatusChange }) => {
           todo.description
         )}
       </p>
+      {/* Select dropdown for changing status */}
       <label>Status : </label>
       <select
         className={getSelectClassName()}
@@ -71,6 +79,7 @@ const TodoItem = ({ todo, onEdit, onDelete, onStatusChange }) => {
         </option>
       </select>
       <br />
+      {/* Buttons for editing, saving, canceling, and deleting */}
       {isEditing ? (
         <>
           <button className="btn btn-success" onClick={handleSaveEdit}>

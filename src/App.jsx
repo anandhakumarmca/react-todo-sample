@@ -5,9 +5,11 @@ import AddTodoForm from "./components/AddTodoForm";
 import FilterTodo from "./components/FilterTodo";
 
 function App() {
-  const [todos, setTodos] = useState([]);
-  const [statusFilter, setStatusFilter] = useState("all");
+  // State for managing todos and status filter
+  const [todos, setTodos] = useState([]); // State to hold todo items
+  const [statusFilter, setStatusFilter] = useState("all"); // State for filtering todos
 
+  // Function to add a new todo
   const addTodo = (newTodo) => {
     setTodos([
       ...todos,
@@ -15,6 +17,7 @@ function App() {
     ]);
   };
 
+  // Function to edit an existing todo
   const editTodo = (id, updatedTodo) => {
     const updatedTodos = todos.map((todo) =>
       todo.id === id ? { ...todo, ...updatedTodo } : todo
@@ -22,11 +25,13 @@ function App() {
     setTodos(updatedTodos);
   };
 
+  // Function to delete a todo
   const deleteTodo = (id) => {
     const updatedTodos = todos.filter((todo) => todo.id !== id);
     setTodos(updatedTodos);
   };
 
+  // Function to change the status of a todo
   const changeTodoStatus = (id, newStatus) => {
     const updatedTodos = todos.map((todo) =>
       todo.id === id ? { ...todo, status: newStatus } : todo
@@ -34,32 +39,40 @@ function App() {
     setTodos(updatedTodos);
   };
 
+  // Filtering todos based on the selected status filter
   const filteredTodos =
     statusFilter === "all"
       ? todos
       : todos.filter((todo) => todo.status === statusFilter);
 
+  // Load todos from local storage when the component mounts
   useEffect(() => {
-    // Retrieve stored card data from local storage
     const storedData = localStorage.getItem("todos");
     if (storedData) {
       setTodos(JSON.parse(storedData));
     }
-  }, []); // Run only on component mount
+  }, []);
 
+  // Save todos to local storage whenever they change
   useEffect(() => {
-    // Save todos to local storage whenever it changes
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
 
   return (
     <div className="App">
+      {/* App title */}
       <h1>My Todo</h1>
+
+      {/* Form to add new todos */}
       <AddTodoForm onAdd={addTodo} />
+
+      {/* Filter todos based on status */}
       <FilterTodo
         statusFilter={statusFilter}
         onStatusFilterChange={setStatusFilter}
       />
+
+      {/* List of todos */}
       <TodoList
         todos={filteredTodos}
         onEdit={editTodo}
