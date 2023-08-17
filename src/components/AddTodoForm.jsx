@@ -3,12 +3,20 @@ import React, { useState } from "react";
 const AddTodoForm = ({ onAdd }) => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
+  const [error, setError] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!name || !description) {
+      setError("Please fill the both fields.");
+      return;
+    }
+
     onAdd({ name, description });
     setName("");
     setDescription("");
+    setError("");
   };
 
   return (
@@ -28,7 +36,7 @@ const AddTodoForm = ({ onAdd }) => {
           />
           <button type="submit">Add Todo</button>
         </div>
-        <br></br>
+        {error && <p className="error-message danger">{error}</p>}
       </form>
     </div>
   );
