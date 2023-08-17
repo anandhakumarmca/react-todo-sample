@@ -90,5 +90,5 @@ Contributions are welcome! Here's how you can get involved:
 
 Check out the live demo of the app on Netlify:
 
-[![Netlify](https://react-todo-sample-app.netlify.app/)
+[![Netlify](https://www.netlify.com/img/global/badges/netlify-color-bg.svg)](https://react-todo-sample-app.netlify.app/)
 
