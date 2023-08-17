@@ -53,3 +53,9 @@ Welcome to the My Todo App! This is a simple web application built using React t
 
    ```sh
     `npm start`
+
+5. Open your browser and go to:
+
+   ```sh
+    `http://localhost:3000`
+
