@@ -16,7 +16,10 @@ Welcome to the My Todo App! This is a simple web application built using React t
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Dependencies](#dependencies)
+- [How to Contribute](#how-to-contribute)
+- [Live Demo](#live-demo)
 
 ## Features
 
@@ -58,4 +61,34 @@ Welcome to the My Todo App! This is a simple web application built using React t
 
    ```sh
     `http://localhost:3000`
+
+## Folder Structure
+
+- `public/`: Contains the HTML template and public assets.
+- `src/`: Contains the main source code.
+  - `components/`: Contains React components.
+  - `components/`: Contains CSS styles for the components.
+  - `App.js`: Main application component.
+  - `index.js`: Entry point for React rendering.
+
+## Dependencies
+
+- React
+- Font Awesome (for icons)
+
+## How to Contribute
+
+Contributions are welcome! Here's how you can get involved:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/new-feature`
+3. Make your changes and commit: `git commit -m "Add new feature"`
+4. Push your changes to your forked repository: `git push origin feature/new-feature`
+5. Create a pull request.
+
+## Live Demo
+
+Check out the live demo of the app on Netlify:
+
+[![Netlify](https://react-todo-sample-app.netlify.app/)
 
